@@ -19,7 +19,7 @@ def getFeatures(data):
 def getLabels(data):
     labels = data.split("\n")
     labels.remove('')
-    labels = [int(label.replace("\n", "")) for label in labels]
+    labels = [float(label.replace("\n", "")) for label in labels]
     #print(labels)
     return labels;
 
@@ -40,10 +40,9 @@ data = file.read(1000000000)
 testFeatures = getFeatures(data)
 
 # isKernel=True must be set for precomputer kernel
-problem  = svm_problem(trainLabels, trainFeatures, isKernel=True)
+problem  = svm_problem(trainLabels, trainFeatures)
 parameters = svm_parameter('-s 0 -t 0 -c 1.000000 -q -b 1')
 modell = svm_train(problem, parameters)
-# For the format of precomputed kernel, please read LIBSVM README.
 predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell)
-for val in predictedVal:
-    print(val)
+[print(val) for val in predictedVal]
+    
