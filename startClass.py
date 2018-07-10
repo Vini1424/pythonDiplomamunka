@@ -1,4 +1,7 @@
-import libsvm
+import sys
+sys.path.append('.\libsvm\python')
+
+from svmutil import *
 
 y, x = [1,-1], [[1,0,1], [-1,0,-1]];
 
