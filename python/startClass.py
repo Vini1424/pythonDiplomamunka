@@ -23,19 +23,19 @@ def getLabels(data):
     #print(labels)
     return labels;
 
-file = open('data\\labels.task2.num.train-full.txt')
+file = open('dataSet\\labels.task2.num.train-full.txt')
 data = file.read(1000000000)
 trainLabels = getLabels(data)
 
-file = open('data\\features.boaw-mfcc.task2.64.std-by-spk.train-full.txt')
+file = open('dataSet\\features.boaw-mfcc.task2.64.std-by-spk.train-full.txt')
 data = file.read(1000000000)
 trainFeatures = getFeatures(data)
 
-file = open('data\\labels.task2.num.test.txt')
+file = open('dataSet\\labels.task2.num.test.txt')
 data = file.read(1000000000)
 testLabels = getLabels(data)
 
-file = open('data\\features.boaw-mfcc.task2.64.std-by-spk.test.txt')
+file = open('dataSet\\features.boaw-mfcc.task2.64.std-by-spk.test.txt')
 data = file.read(1000000000)
 testFeatures = getFeatures(data)
 
