@@ -1,17 +1,20 @@
 echo Get features
-java -jar .\openXBOW\openXBOW.jar -i .\openXBOW\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l .\openXBOW\dataSet\labels.num.train-full.csv -o .\result\bow.csv
-
+cd .\openXBOW
+java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train.csv -size 200 -B codebook
+java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test.csv -b codebook
+cd ..
 PAUSE
 
 echo train SVM
 cd .\python
-python startClass.py
-
+python startClass.py -h
+python startClass.py --itrainlabelfile ..\result\trainLabels.csv --itrainfile ..\result\train.csv --itestlabelfile ..\result\testLabels.csv --itestfile ..\result\test.csv
 cd..
 
 @ECHO OFF
 REM clustering algorithm: "-c random"
 REM codebook: "-B filename" store the codebook | "-b filename" load the codebook | "-size 200" 
+REM bag-of-words: 
 REM 
 REM -t p1 p2        Segment the input files with a windows size (segment width) of p1 seconds and a hop size (shift) of p2 seconds
 REM                  If this option is used, the second column of the input file must be a time index (in seconds) of the current frame and
