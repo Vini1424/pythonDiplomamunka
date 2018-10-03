@@ -8,7 +8,7 @@ PAUSE
 echo train SVM
 cd .\python
 python startClass.py -h
-python startClass.py --itrainlabelfile ..\result\trainLabels.csv --itrainfile ..\result\train.csv --itestlabelfile ..\result\testLabels.csv --itestfile ..\result\test.csv
+python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test.csv
 cd..
 
 @ECHO OFF
