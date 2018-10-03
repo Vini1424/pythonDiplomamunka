@@ -1,0 +1,96 @@
+-i p            Name/Path of an input (ARFF or CSV) file p containing feature vectors over time
+                 The first feature must be a string or number which specifies all feature vectors which belong to one analysis window/instance.
+-attributes p   An optional string, specifying all input attributes (mandatory in case of multiple labels):
+                 n=name, t=time stamp, 0=text feature, 1-9=numeric feature, c=class label/numeric label, r=remove attribute
+                 Using different numbers for numeric features will create a separate codebook and bag for all features belonging to the same index.
+                 The codebook index is followed by brackets [] specifying the number of consecutive input features belonging to this index.
+                 Example: -attributes nt1[14]2[14]c
+                 Input file with the structure: name,timestamp,28 numeric features split into two codebooks (14 features each) and one label.
+-o p            Name / Path of an output ARFF, CSV or LibSVM file p containing the bag-of-words representation.
+                 The file format depends on the given file ending (*.arff, *.csv or *.libsvm).
+-oi p           Name / Path of an output CSV file p containing the word indexes.
+-svmModel p     Name / Path of a Liblinear model (must be L2R_LR_DUAL) to decode the BoW.
+                 p specifies the model file. openXBOW outputs a JSON file with the same name (unless given by oJson option).
+-oJson p        Name / Path of the JSON output file including the predictions of the Liblinear model (must be given by the option svmModel).
+-writeName      Output the id string/number in the output file (only ARFF & CSV).
+-writeTimeStamp Output the time stamp in the output file (only ARFF & CSV).
+-noLabels       Do not output the labels in the output file. This option is useful in two cases:
+                 1) The input file (-i) contains labels, but they are not desired in the output (-o).
+                 2) A labels file (-l) was given only to restrict the output (-o) to a certain interval in time (see -l).
+-arffLabels p   String containing all potential class labels (separator comma without whitespaces) for ARFF output file.
+                 Only required if not all labels are found in the input data or (?=unknown). Example: -arffLabels class1,class2,class3
+-append         Append output to file (if output file already exists).
+-l p            CSV file p with the class labels for each analysis window/instance.
+                 In case a label file is given, the output is restricted to the instances, where labels are given.
+                 Both nominal and numeric classes are supported. Format:
+                 1st line (optional): name (according to the input file); label1; label2; ...
+                 2nd line:            'file_1.wav'; class1; ...
+                                      [and so on]
+
+-t p1 p2        Segment the input files with a windows size (segment width) of p1 seconds and a hop size (shift) of p2 seconds
+                 If this option is used, the second column of the input file must be a time index (in seconds) of the current frame and
+                 the (optional) labels file must have the corresponding time stamp as the 2nd column (name; time; label).
+
+-e p1 p2        Remove all feature vectors from the input, where the activity (or energy) is below p2. Index p1 specifies the index of the activity attribute (first index: 1).
+-standardizeInput  Standardize all numeric input features.
+                 The parameters are stored in the codebook file (-B) and then used for standardization of test data (-b) in an online approach.
+-normalizeInput Normalize all numeric input features (min->max is normalized to 0->1).
+                 The parameters are stored in the codebook file (-B) and then used for standardization of test data (-b) in an online approach.
+-size p         Set the (initial) size p of the codebook. (default: size=500)
+                 In case of several codebooks (see -attributes) different sizes can be specified using separator comma, e.g., -size 200,500,100
+-c p            Method of creating the codebook:
+                 p=random (default): Generate the codebook by random sampling of the input feature vectors.
+                 p=random++: Generate the codebook by random sampling of the input feature vectors with weighting similiar to initialization of kmeans++.
+                 p=kmeans: Employ kmeans clustering (Lloyd's algorithm).
+                 p=kmeans++: Employ kmeans++ clustering (Lloyd's algorithm).
+                 p=generic: Generate a generic codebook (independent from data). The parameter '-size' is not relevant when selecting this method.
+-gen p          Offset for the values in the generic codebook.
+-reduce p       Reduce the size of the codebook by merging words which are correlated with each other. PCC with threshold p is considered.
+-supervised     Generate a codebook for each class separately, first, then merge all codebooks. (Not available for numeric labels.)
+-seed p         Select the random seed p used for codebook creation. (Has no effect on training selection configured by -numTrain).
+-numTrain p     Randomly choose p feature vectors from the input data for the creation of the codebook (should not be used for random sampling).
+
+-unigram p      Apply the n-gram approach to numeric features using unigrams. Only the p most frequent codewords are taken into account.
+-bigram p       Apply the n-gram approach to numeric features using bigrams. The p most frequent codewords are taken into account.
+-trigram p      Apply the n-gram approach to numeric features using trigrams. The p most frequent codewords are taken into account.
+                 The uni-/bi-/trigram codebooks are stored in the codebook file (-B) and used when loading a codebook (-b).
+                 In case of several codebooks (see -attributes) different sizes can be specified using separator comma, e.g., -bigram 200,600
+                 In case of using uni-/bi-/trigrams, the standard BoW are no longer generated for the respective codebook.
+                 p=0 results in the standard BoW approach.
+
+-b p            Load codebook p (do not create one).
+-B p            Save the created codebook as a file p.
+
+-minTermFreq p  Gives a minimum threshold for the number of occurrences of each word/n-gram to be considered for codebook generation (default: minTermFreq=1)
+-maxTermFreq p  Gives a maximum threshold for the number of occurrences of each word/n-gram to be considered for codebook generation (default: maxTermFreq=0(inf))
+-stopChar p     Specifies characters which are removed from all input instances (default: .,;:()?!* )
+-nGram p        N-gram (default: nGram=1)
+-nCharGram p    N-character-gram (default: nCharGram=0)
+
+-a p            When creating the bag-of-words, assign each input feature vector to p closest words from the codebook. (default: a=1, only closest word)
+                 In case of several codebooks (see -attributes), a different number can be specified for each codebook using separator comma, e.g., -a 5,2
+                 This parameter is stored in the codebook file (-B) and used when the respective codebook is loaded (-b).
+-gaussian p     Soft assignment using Gaussian encoding with standard deviation (stddev) p.
+                 In case of several codebooks (see -attributes), a different stddev can be specified for each codebook using separator comma, e.g., -a 25.0,30.0
+                 This parameter is stored in the codebook file (-B) and used when the respective codebook is loaded (-b).
+-off p          Off codebook words: Features with an Euclidean distance above threshold p to codewords are not be considered in the assignment step.
+                 In case of several codebooks (see -attributes), a different stddev can be specified for each codebook using separator comma, e.g., -off 25.0,30.0
+                 This parameter is stored in the codebook file (-B) and used when the respective codebook is loaded (-b).
+
+-log            Logarithmic term weighting 'lg(TF+1)' of the term frequency.
+                 This parameter is stored in the codebook file (-B) and used when the respective codebook is loaded (-b).
+-idf            Inverse document frequency transform: Multiply the term frequency (TF) with the logarithm of the ratio of the
+                 total number of instances and the number of instances where the respective word is present.
+                 This parameter is stored in the codebook file (-B) and used when the respective codebook is loaded (-b).
+-norm p         Normalize the bag-of-words (3 options of normalization).
+                 p=1: Divides the term frequencies (TF) by the number of input frames.
+                 p=2: Divides the TF by the sum of all TFs.
+                 p=3: Divides the TF by a factor so that the resulting Euclidean length is 1.
+
+-standardizeOutput  Standardize all output features (term frequencies).
+                 The parameters are stored in the codebook file (-B) and then used for standardization of test data (-b) in an online approach.
+-normalizeOutput  Normalize all output features (term frequencies, min->max is normalized to 0->1).
+                 The parameters are stored in the codebook file (-B) and then used for standardization of test data (-b) in an online approach.
+
+Example:
+java -jar openXBOW.jar -i features.arff -o boaw.arff -l labels.csv -size 100
