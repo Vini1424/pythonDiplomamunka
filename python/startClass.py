@@ -1,6 +1,8 @@
 import sys, getopt, re
 sys.path.append('.\libsvm-master\python')
 from svmutil import *
+from sklearn.metrics import confusion_matrix, accuracy_score, recall_score
+import numpy as np
 
 def getFeatures(data):
     features = data.split("\n")
@@ -63,12 +65,18 @@ def main(argv):
     data = file.read(1000000000)
     testFeatures = getFeatures(data)
 
-    # isKernel=True must be set for precomputer kernel
+    classNumber = len(set(testLabels))
+
     problem  = svm_problem(trainLabels, trainFeatures)
-    parameters = svm_parameter('-s 0 -t 0 -c 1.000000 -q -b 1')
+    parameters = svm_parameter('-c 1 -t 0 -b 1 -q')
     modell = svm_train(problem, parameters)
-    predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell)
-    #[print(val) for val in predictedVal]
+    predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell, options='-b 1 -q')
+
+    confMatrix = confusion_matrix(testLabels, predictedLabel)
+    print('\nAccuracy: ', accuracy_score(testLabels, predictedLabel))
+    print('\nConf matrix: \n', confMatrix)
+    print('\nUAR: ', recall_score(testLabels, predictedLabel, average='macro'))
+
 
 if __name__ == "__main__":
    main(sys.argv[1:])

@@ -1,17 +1,27 @@
-echo Get features
+@ECHO OFF
+
+echo.
+echo Get features...
+echo.
+
 cd .\openXBOW
 java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train.csv -size 200 -B codebook
+echo.
 java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test.csv -b codebook
 cd ..
-PAUSE
+echo.
 
-echo train SVM
+echo.
+echo train SVM...
+echo.
+
 cd .\python
-python startClass.py -h
+REM python startClass.py -h
 python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test.csv
 cd..
 
-@ECHO OFF
+echo.
+
 REM clustering algorithm: "-c random"
 REM codebook: "-B filename" store the codebook | "-b filename" load the codebook | "-size 200" 
 REM bag-of-words: 
