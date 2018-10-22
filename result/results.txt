@@ -1,0 +1,179 @@
+ 
+train with 32 feature vectors with random 
+train with 64 feature vectors with random 
+train with 128 feature vectors with random 
+train with 256 feature vectors with random 
+train with 512 feature vectors with random 
+train with 1024 feature vectors with random 
+train with 2048 feature vectors with random 
+train with 4094 feature vectors with random 
+train with 8192 feature vectors with random 
+train with 16384 feature vectors with random 
+train with 32768 feature vectors with random 
+
+Accuracy: 0.675
+Conf matrix: 
+[[ 58   0  11   7]
+ [  7   0   7   5]
+ [ 26   0 127  20]
+ [  3   0   5   4]]
+UAR: 0.4576488185782375
+Accuracy: 0.7035714285714286
+Conf matrix: 
+[[ 61   0  15   0]
+ [ 12   0   7   0]
+ [ 37   0 136   0]
+ [  6   0   6   0]]
+UAR: 0.3971896866443566
+Accuracy: 0.6928571428571428
+Conf matrix: 
+[[ 31   0  45   0]
+ [  5   0  14   0]
+ [ 10   0 163   0]
+ [  4   0   8   0]]
+UAR: 0.3375228171585032
+Accuracy: 0.6357142857142857
+Conf matrix: 
+[[  6   0  70   0]
+ [  0   0  19   0]
+ [  1   0 172   0]
+ [  0   0  12   0]]
+UAR: 0.26829175540006084
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25 
+train with 32 feature vectors with random plus plus 
+train with 64 feature vectors with random plus plus 
+train with 128 feature vectors with random plus plus 
+train with 256 feature vectors with random plus plus 
+train with 512 feature vectors with random plus plus 
+train with 1024 feature vectors with random plus plus 
+train with 2048 feature vectors with random plus plus 
+train with 4094 feature vectors with random plus plus 
+train with 8192 feature vectors with random plus plus 
+train with 16384 feature vectors with random plus plus 
+train with 32768 feature vectors with random plus plus 
+
+Accuracy: 0.7607142857142857
+Conf matrix: 
+[[ 48   0  28   0]
+ [  4   0  15   0]
+ [  8   0 165   0]
+ [  3   0   9   0]]
+UAR: 0.39633404320048676
+Accuracy: 0.7607142857142857
+Conf matrix: 
+[[ 46   0  30   0]
+ [  4   0  15   0]
+ [  6   0 167   0]
+ [  3   0   9   0]]
+UAR: 0.39264526924247034
+Accuracy: 0.725
+Conf matrix: 
+[[ 38   0  38   0]
+ [  4   0  15   0]
+ [  8   0 165   0]
+ [  3   0   9   0]]
+UAR: 0.3634393063583815
+Accuracy: 0.6964285714285714
+Conf matrix: 
+[[ 31   0  45   0]
+ [  3   0  16   0]
+ [  9   0 164   0]
+ [  0   0  12   0]]
+UAR: 0.3389679038637055
+Accuracy: 0.6714285714285714
+Conf matrix: 
+[[ 29   0  47   0]
+ [  3   0  16   0]
+ [ 14   0 159   0]
+ [  3   0   9   0]]
+UAR: 0.3251635229692729
+Accuracy: 0.7321428571428571
+Conf matrix: 
+[[ 40   0  36   0]
+ [  3   0  16   0]
+ [  8   0 165   0]
+ [  2   0  10   0]]
+UAR: 0.3700182537268025
+Accuracy: 0.7642857142857142
+Conf matrix: 
+[[ 47   1  28   0]
+ [  6   0  13   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39593474292668085
+Accuracy: 0.775
+Conf matrix: 
+[[ 51   0  25   0]
+ [  3   0  16   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.4076475509583206
+Accuracy: 0.7821428571428571
+Conf matrix: 
+[[ 53   1  21   1]
+ [  5   0  14   0]
+ [  6   0 166   1]
+ [  4   0   8   0]]
+UAR: 0.4142264983267417
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756

@@ -65,6 +65,8 @@ def main(argv):
     data = file.read(1000000000)
     testFeatures = getFeatures(data)
 
+    resultFile = open("../result/results.txt", "a+")
+
     classNumber = len(set(testLabels))
 
     problem  = svm_problem(trainLabels, trainFeatures)
@@ -73,9 +75,12 @@ def main(argv):
     predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell, options='-b 1 -q')
 
     confMatrix = confusion_matrix(testLabels, predictedLabel)
-    print('\nAccuracy: ', accuracy_score(testLabels, predictedLabel))
-    print('\nConf matrix: \n', confMatrix)
-    print('\nUAR: ', recall_score(testLabels, predictedLabel, average='macro'))
+    accuracy = accuracy_score(testLabels, predictedLabel)
+    uar = recall_score(testLabels, predictedLabel, average='macro')
+    resultFile.write('\nAccuracy: ' + str(accuracy))
+    resultFile.write('\nConf matrix: \n' + str(confMatrix))
+    resultFile.write('\nUAR: ' + str(uar))
+    resultFile.close()
 
 
 if __name__ == "__main__":

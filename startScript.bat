@@ -5,11 +5,119 @@ echo Get features...
 echo.
 
 cd .\openXBOW
-java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train.csv -size 200 -B codebook
+echo codebook size will be 32...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train32.csv -norm 1 -size 32 -B codebook32
 echo.
-java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test.csv -b codebook
+echo codebook size will be 64...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train64.csv -norm 1 -size 64 -B codebook64
+echo.
+echo codebook size will be 128...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train128.csv -norm 1 -size 128 -B codebook128
+echo.
+echo codebook size will be 256...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train256.csv -norm 1 -size 256 -B codebook256
+echo.
+echo codebook size will be 512...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train512.csv -norm 1 -size 512 -B codebook512
+echo.
+echo codebook size will be 1024...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train1024.csv -norm 1 -size 1024 -B codebook1024
+echo.
+echo codebook size will be 2048...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train2048.csv -norm 1 -size 2048 -B codebook2048
+echo.
+echo codebook size will be 4049...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train4094.csv -norm 1 -size 4094 -B codebook4094
+echo.
+echo codebook size will be 8192...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train8192.csv -norm 1 -size 8192 -B codebook8192
+echo.
+echo codebook size will be 16384...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train16384.csv -norm 1 -size 16384 -B codebook16384
+echo.
+echo codebook size will be 32768...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train32768.csv -norm 1 -size 16384 -B codebook32768
+echo.
+echo codebook size will be 32 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train32randomPP.csv -norm 1 -size 32 -B codebook32randomPP -c random++
+echo.
+echo codebook size will be 64 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train64randomPP.csv -norm 1 -size 64 -B codebook64randomPP -c random++
+echo.
+echo codebook size will be 128 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train128randomPP.csv -norm 1 -size 128 -B codebook128randomPP -c random++
+echo.
+echo codebook size will be 256 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train256randomPP.csv -norm 1 -size 256 -B codebook256randomPP -c random++
+echo.
+echo codebook size will be 512 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train512randomPP.csv -norm 1 -size 512 -B codebook512randomPP -c random++
+echo.
+echo codebook size will be 1024 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train1024randomPP.csv -norm 1 -size 1024 -B codebook1024randomPP -c random++
+echo.
+echo codebook size will be 2048 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train2048randomPP.csv -norm 1 -size 2048 -B codebook2048randomPP -c random++
+echo.
+echo codebook size will be 4049 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train4094randomPP.csv -norm 1 -size 4094 -B codebook4094randomPP -c random++
+echo.
+echo codebook size will be 8192 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train8192randomPP.csv -norm 1 -size 8192 -B codebook8192randomPP -c random++
+echo.
+echo codebook size will be 16384 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train16384randomPP.csv -norm 1 -size 16384 -B codebook16384randomPP -c random++
+echo.
+echo codebook size will be 32768 and sampling type is random plus plus...
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.train-full.csv  -l ..\dataSet\labels.num.train-full.csv -o ..\result\train32768randomPP.csv -norm 1 -size 16384 -B codebook32768randomPP -c random++
+echo.
+
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test32.csv -norm 1 -size 32 -b codebook32
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test64.csv -norm 1 -size 64 -b codebook64
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test128.csv -norm 1 -size 128 -b codebook128
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test256.csv -norm 1 -size 256 -b codebook256
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test512.csv -norm 1 -size 512 -b codebook512
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test1024.csv -norm 1 -size 1024 -b codebook1024
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test2048.csv -norm 1 -size 2048 -b codebook2048
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test4094.csv -norm 1 -size 4094 -b codebook4094
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test8192.csv -norm 1 -size 8192 -b codebook8192
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test16384.csv -norm 1 -size 16384 -b codebook16384
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test32768.csv -norm 1 -size 16384 -b codebook32768
+echo.
+
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test32randomPP.csv -norm 1 -size 32 -b codebook32randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test64randomPP.csv -norm 1 -size 64 -b codebook64randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test128randomPP.csv -norm 1 -size 128 -b codebook128randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test256randomPP.csv -norm 1 -size 256 -b codebook256randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test512randomPP.csv -norm 1 -size 512 -b codebook512randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test1024randomPP.csv -norm 1 -size 1024 -b codebook1024randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test2048randomPP.csv -norm 1 -size 2048 -b codebook2048randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test4094randomPP.csv -norm 1 -size 4094 -b codebook4094randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test8192randomPP.csv -norm 1 -size 8192 -b codebook8192randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test16384randomPP.csv -norm 1 -size 16384 -b codebook16384randomPP -c random++
+echo.
+REM java -jar .\openXBOW.jar -i ..\dataSet\llds.emotion-hun.compare-1x65.test.csv  -l ..\dataSet\labels.num.test.csv -o ..\result\test32768randomPP.csv -norm 1 -size 16384 -b codebook32768randomPP -c random++
+echo.
 cd ..
-echo.
 
 echo.
 echo train SVM...
@@ -17,7 +125,54 @@ echo.
 
 cd .\python
 REM python startClass.py -h
-python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test.csv
+echo. >> ..\result\results.txt
+echo train with 32 feature vectors with random >> ..\result\results.txt
+echo train with 64 feature vectors with random >> ..\result\results.txt
+echo train with 128 feature vectors with random >> ..\result\results.txt
+echo train with 256 feature vectors with random >> ..\result\results.txt
+echo train with 512 feature vectors with random >> ..\result\results.txt
+echo train with 1024 feature vectors with random >> ..\result\results.txt
+echo train with 2048 feature vectors with random >> ..\result\results.txt
+echo train with 4094 feature vectors with random >> ..\result\results.txt
+echo train with 8192 feature vectors with random >> ..\result\results.txt
+echo train with 16384 feature vectors with random >> ..\result\results.txt
+echo train with 32768 feature vectors with random >> ..\result\results.txt
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train64.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test64.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train128.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test128.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train256.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test256.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train512.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test512.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train1024.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test1024.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train2048.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test2048.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train4094.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test4094.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train8192.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test8192.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train16384.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test16384.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32768.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32768.csv
+
+echo. >> ..\result\results.txt
+echo train with 32 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 64 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 128 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 256 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 512 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 1024 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 2048 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 4094 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 8192 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 16384 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 32768 feature vectors with random plus plus >> ..\result\results.txt
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train64randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test64randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train128randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test128randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train256randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test256randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train512randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test512randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train1024randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test1024randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train2048randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test2048randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train4094randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test4094randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train8192randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test8192randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train16384randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test16384randomPP.csv
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32768randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32768randomPP.csv
+
 cd..
 
 echo.
