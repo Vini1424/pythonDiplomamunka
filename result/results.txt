@@ -11,27 +11,242 @@ train with 8192 feature vectors with random
 train with 16384 feature vectors with random 
 train with 32768 feature vectors with random 
 
-Accuracy: 0.675
+
+SVM complexity: -5
+Accuracy: 0.7535714285714286
 Conf matrix: 
-[[ 58   0  11   7]
+[[ 64   0  11   1]
+ [ 10   0   9   0]
+ [ 21   0 147   5]
+ [  5   0   7   0]]
+UAR: 0.42295406145421355
+
+SVM complexity: -4
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 64   0  12   0]
+ [ 10   1   8   0]
+ [ 22   0 151   0]
+ [  5   0   7   0]]
+UAR: 0.4418923030118649
+
+SVM complexity: -3
+Accuracy: 0.7321428571428571
+Conf matrix: 
+[[ 63   0  11   2]
+ [ 10   0   9   0]
+ [ 29   0 142   2]
+ [  5   0   7   0]]
+UAR: 0.41243915424399147
+
+SVM complexity: -2
+Accuracy: 0.6607142857142857
+Conf matrix: 
+[[ 59   0  11   6]
+ [ 12   0   5   2]
+ [ 27   0 124  22]
+ [  5   1   4   2]]
+UAR: 0.41493636548017443
+
+SVM complexity: -1
+Accuracy: 0.6678571428571428
+Conf matrix: 
+[[ 54   0  12  10]
  [  7   0   7   5]
- [ 26   0 127  20]
- [  3   0   5   4]]
-UAR: 0.4576488185782375
+ [ 21   0 129  23]
+ [  4   0   4   4]]
+UAR: 0.44738109725180003
+
+SVM complexity: 0
+Accuracy: 0.7
+Conf matrix: 
+[[ 61   0  11   4]
+ [ 10   0   7   2]
+ [ 31   0 135   7]
+ [  7   0   5   0]]
+UAR: 0.39574459993915423
+
+SVM complexity: 1
+Accuracy: 0.6928571428571428
+Conf matrix: 
+[[ 59   0  11   6]
+ [  8   0   7   4]
+ [ 31   0 132  10]
+ [  4   0   5   3]]
+UAR: 0.44733039245512624
+
+SVM complexity: -5
+Accuracy: 0.7535714285714286
+Conf matrix: 
+[[ 60   0  16   0]
+ [ 10   0   9   0]
+ [ 22   0 151   0]
+ [  5   0   7   0]]
+UAR: 0.4155765135381807
+
+SVM complexity: -4
+Accuracy: 0.7535714285714286
+Conf matrix: 
+[[ 61   0  15   0]
+ [ 10   0   9   0]
+ [ 23   0 150   0]
+ [  5   0   7   0]]
+UAR: 0.41742090051718894
+
+SVM complexity: -3
+Accuracy: 0.7142857142857143
+Conf matrix: 
+[[ 59   0  17   0]
+ [ 13   0   6   0]
+ [ 32   0 141   0]
+ [  6   0   6   0]]
+UAR: 0.39783617280194705
+
+SVM complexity: -2
+Accuracy: 0.7071428571428572
+Conf matrix: 
+[[ 60   1  14   1]
+ [ 14   0   5   0]
+ [ 31   1 138   3]
+ [  6   0   6   0]]
+UAR: 0.39679038637055064
+
+SVM complexity: -1
+Accuracy: 0.7071428571428572
+Conf matrix: 
+[[ 62   0  13   1]
+ [ 13   0   6   0]
+ [ 37   0 136   0]
+ [  6   0   6   0]]
+UAR: 0.4004791603285671
+
+SVM complexity: 0
 Accuracy: 0.7035714285714286
 Conf matrix: 
 [[ 61   0  15   0]
- [ 12   0   7   0]
+ [ 11   0   8   0]
  [ 37   0 136   0]
  [  6   0   6   0]]
 UAR: 0.3971896866443566
-Accuracy: 0.6928571428571428
+
+SVM complexity: 1
+Accuracy: 0.7464285714285714
 Conf matrix: 
-[[ 31   0  45   0]
+[[ 42   0  34   0]
+ [  3   0  16   0]
+ [  6   0 167   0]
+ [  3   0   9   0]]
+UAR: 0.37948737450562825
+
+SVM complexity: -5
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 51   0  25   0]
+ [  6   0  13   0]
+ [  8   0 165   0]
+ [  4   0   8   0]]
+UAR: 0.40620246425311834
+
+SVM complexity: -4
+Accuracy: 0.7607142857142857
+Conf matrix: 
+[[ 45   0  31   0]
+ [  6   0  13   0]
+ [  5   0 168   0]
+ [  4   0   8   0]]
+UAR: 0.3908008822634621
+
+SVM complexity: -3
+Accuracy: 0.75
+Conf matrix: 
+[[ 46   0  30   0]
+ [  6   0  13   0]
+ [  9   0 164   0]
+ [  4   0   8   0]]
+UAR: 0.3883100091268634
+
+SVM complexity: -2
+Accuracy: 0.7428571428571429
+Conf matrix: 
+[[ 44   0  32   0]
+ [  5   0  14   0]
+ [  9   0 164   0]
+ [  5   0   7   0]]
+UAR: 0.38173106175844235
+
+SVM complexity: -1
+Accuracy: 0.7178571428571429
+Conf matrix: 
+[[ 38   0  38   0]
  [  5   0  14   0]
  [ 10   0 163   0]
  [  4   0   8   0]]
-UAR: 0.3375228171585032
+UAR: 0.36054913294797686
+
+SVM complexity: 0
+Accuracy: 0.6964285714285714
+Conf matrix: 
+[[ 31   0  45   0]
+ [  5   0  14   0]
+ [  9   0 164   0]
+ [  4   0   8   0]]
+UAR: 0.3389679038637055
+
+SVM complexity: 1
+Accuracy: 0.6964285714285714
+Conf matrix: 
+[[ 31   0  45   0]
+ [  5   0  14   0]
+ [  9   0 164   0]
+ [  3   0   9   0]]
+UAR: 0.3389679038637055
+
+SVM complexity: -5
+Accuracy: 0.6857142857142857
+Conf matrix: 
+[[ 20   0  56   0]
+ [  2   0  17   0]
+ [  1   0 172   0]
+ [  3   0   9   0]]
+UAR: 0.3143443869790082
+
+SVM complexity: -4
+Accuracy: 0.6607142857142857
+Conf matrix: 
+[[ 12   0  64   0]
+ [  2   0  17   0]
+ [  0   0 173   0]
+ [  1   0  11   0]]
+UAR: 0.2894736842105263
+
+SVM complexity: -3
+Accuracy: 0.6428571428571429
+Conf matrix: 
+[[  7   0  69   0]
+ [  2   0  17   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.2730263157894737
+
+SVM complexity: -2
+Accuracy: 0.65
+Conf matrix: 
+[[  9   0  67   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.27960526315789475
+
+SVM complexity: -1
+Accuracy: 0.6357142857142857
+Conf matrix: 
+[[  5   0  71   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.26644736842105265
+
+SVM complexity: 0
 Accuracy: 0.6357142857142857
 Conf matrix: 
 [[  6   0  70   0]
@@ -39,6 +254,26 @@ Conf matrix:
  [  1   0 172   0]
  [  0   0  12   0]]
 UAR: 0.26829175540006084
+
+SVM complexity: 1
+Accuracy: 0.6392857142857142
+Conf matrix: 
+[[  7   0  69   0]
+ [  0   0  19   0]
+ [  1   0 172   0]
+ [  0   0  12   0]]
+UAR: 0.27158122908427135
+
+SVM complexity: -5
+Accuracy: 0.6285714285714286
+Conf matrix: 
+[[  3   0  73   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.2598684210526316
+
+SVM complexity: -4
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -46,6 +281,8 @@ Conf matrix:
  [  0   0 173   0]
  [  0   0  12   0]]
 UAR: 0.25
+
+SVM complexity: -3
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -53,6 +290,8 @@ Conf matrix:
  [  0   0 173   0]
  [  0   0  12   0]]
 UAR: 0.25
+
+SVM complexity: -2
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -60,6 +299,8 @@ Conf matrix:
  [  0   0 173   0]
  [  0   0  12   0]]
 UAR: 0.25
+
+SVM complexity: -1
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -67,6 +308,8 @@ Conf matrix:
  [  0   0 173   0]
  [  0   0  12   0]]
 UAR: 0.25
+
+SVM complexity: 0
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -74,6 +317,8 @@ Conf matrix:
  [  0   0 173   0]
  [  0   0  12   0]]
 UAR: 0.25
+
+SVM complexity: 1
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -81,6 +326,377 @@ Conf matrix:
  [  0   0 173   0]
  [  0   0  12   0]]
 UAR: 0.25
+
+SVM complexity: -5
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -4
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -3
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -2
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 0
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -5
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -4
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -3
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -2
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 0
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -5
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -4
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -3
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -2
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 0
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -5
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -4
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -3
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -2
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 0
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -5
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -4
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -3
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -2
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 0
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -5
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -4
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -3
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -2
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: -1
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 0
+Accuracy: 0.6178571428571429
+Conf matrix: 
+[[  0   0  76   0]
+ [  0   0  19   0]
+ [  0   0 173   0]
+ [  0   0  12   0]]
+UAR: 0.25
+
+SVM complexity: 1
 Accuracy: 0.6178571428571429
 Conf matrix: 
 [[  0   0  76   0]
@@ -100,6 +716,44 @@ train with 8192 feature vectors with random plus plus
 train with 16384 feature vectors with random plus plus 
 train with 32768 feature vectors with random plus plus 
 
+
+SVM complexity: -5
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 52   0  24   0]
+ [  4   0  15   0]
+ [  9   0 164   0]
+ [  5   0   7   0]]
+UAR: 0.4080468512321266
+
+SVM complexity: -4
+Accuracy: 0.775
+Conf matrix: 
+[[ 53   0  23   0]
+ [  4   0  15   0]
+ [  9   0 164   0]
+ [  5   0   7   0]]
+UAR: 0.4113363249163371
+
+SVM complexity: -3
+Accuracy: 0.7607142857142857
+Conf matrix: 
+[[ 46   0  30   0]
+ [  3   0  16   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39264526924247034
+
+SVM complexity: -2
+Accuracy: 0.7642857142857142
+Conf matrix: 
+[[ 47   0  29   0]
+ [  4   0  15   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39593474292668085
+
+SVM complexity: -1
 Accuracy: 0.7607142857142857
 Conf matrix: 
 [[ 48   0  28   0]
@@ -107,6 +761,71 @@ Conf matrix:
  [  8   0 165   0]
  [  3   0   9   0]]
 UAR: 0.39633404320048676
+
+SVM complexity: 0
+Accuracy: 0.7571428571428571
+Conf matrix: 
+[[ 48   0  28   0]
+ [  4   0  15   0]
+ [  9   0 164   0]
+ [  3   0   9   0]]
+UAR: 0.39488895649528444
+
+SVM complexity: 1
+Accuracy: 0.7464285714285714
+Conf matrix: 
+[[ 46   0  30   0]
+ [  3   0  16   0]
+ [ 10   0 163   0]
+ [  3   0   9   0]]
+UAR: 0.3868649224216611
+
+SVM complexity: -5
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 51   0  25   0]
+ [  4   0  15   0]
+ [  9   0 164   0]
+ [  5   0   7   0]]
+UAR: 0.404757377547916
+
+SVM complexity: -4
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 52   0  24   0]
+ [  4   0  15   0]
+ [  9   0 164   0]
+ [  5   0   7   0]]
+UAR: 0.4080468512321266
+
+SVM complexity: -3
+Accuracy: 0.7607142857142857
+Conf matrix: 
+[[ 46   0  30   0]
+ [  4   0  15   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39264526924247034
+
+SVM complexity: -2
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 49   0  27   0]
+ [  4   0  15   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.4010686035898996
+
+SVM complexity: -1
+Accuracy: 0.7642857142857142
+Conf matrix: 
+[[ 47   0  29   0]
+ [  6   0  13   0]
+ [  6   0 167   0]
+ [  3   0   9   0]]
+UAR: 0.39593474292668085
+
+SVM complexity: 0
 Accuracy: 0.7607142857142857
 Conf matrix: 
 [[ 46   0  30   0]
@@ -114,27 +833,260 @@ Conf matrix:
  [  6   0 167   0]
  [  3   0   9   0]]
 UAR: 0.39264526924247034
-Accuracy: 0.725
+
+SVM complexity: 1
+Accuracy: 0.7464285714285714
 Conf matrix: 
-[[ 38   0  38   0]
+[[ 42   0  34   0]
+ [  3   0  16   0]
+ [  6   0 167   0]
+ [  3   0   9   0]]
+UAR: 0.37948737450562825
+
+SVM complexity: -5
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 52   0  24   0]
+ [  4   0  15   0]
+ [  9   0 164   0]
+ [  5   0   7   0]]
+UAR: 0.4080468512321266
+
+SVM complexity: -4
+Accuracy: 0.7571428571428571
+Conf matrix: 
+[[ 47   0  29   0]
+ [  3   0  16   0]
+ [  8   0 165   0]
+ [  4   0   8   0]]
+UAR: 0.39304456951627625
+
+SVM complexity: -3
+Accuracy: 0.775
+Conf matrix: 
+[[ 47   0  29   0]
+ [  4   0  15   0]
+ [  3   0 170   0]
+ [  4   0   8   0]]
+UAR: 0.40027000304228777
+
+SVM complexity: -2
+Accuracy: 0.775
+Conf matrix: 
+[[ 47   0  29   0]
+ [  5   0  14   0]
+ [  3   0 170   0]
+ [  4   0   8   0]]
+UAR: 0.40027000304228777
+
+SVM complexity: -1
+Accuracy: 0.7321428571428571
+Conf matrix: 
+[[ 39   0  37   0]
+ [  4   0  15   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.36817386674779434
+
+SVM complexity: 0
+Accuracy: 0.7178571428571429
+Conf matrix: 
+[[ 36   0  40   0]
  [  4   0  15   0]
  [  8   0 165   0]
  [  3   0   9   0]]
-UAR: 0.3634393063583815
-Accuracy: 0.6964285714285714
+UAR: 0.35686035898996044
+
+SVM complexity: 1
+Accuracy: 0.7142857142857143
 Conf matrix: 
 [[ 31   0  45   0]
+ [  4   0  15   0]
+ [  4   0 169   0]
+ [  3   0   9   0]]
+UAR: 0.3461933373897171
+
+SVM complexity: -5
+Accuracy: 0.7642857142857142
+Conf matrix: 
+[[ 49   0  27   0]
+ [  4   0  15   0]
+ [  8   0 165   0]
+ [  4   0   8   0]]
+UAR: 0.3996235168846973
+
+SVM complexity: -4
+Accuracy: 0.7571428571428571
+Conf matrix: 
+[[ 45   0  31   0]
  [  3   0  16   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.38935579555825983
+
+SVM complexity: -3
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 46   0  30   0]
+ [  5   0  14   0]
+ [  4   0 169   0]
+ [  3   0   9   0]]
+UAR: 0.395535442652875
+
+SVM complexity: -2
+Accuracy: 0.7357142857142858
+Conf matrix: 
+[[ 42   0  34   0]
+ [  4   0  15   0]
  [  9   0 164   0]
- [  0   0  12   0]]
-UAR: 0.3389679038637055
-Accuracy: 0.6714285714285714
+ [  3   0   9   0]]
+UAR: 0.3751521143900213
+
+SVM complexity: -1
+Accuracy: 0.7071428571428572
+Conf matrix: 
+[[ 31   0  45   0]
+ [  4   0  15   0]
+ [  6   0 167   0]
+ [  2   0  10   0]]
+UAR: 0.34330316397931243
+
+SVM complexity: 0
+Accuracy: 0.6928571428571428
 Conf matrix: 
 [[ 29   0  47   0]
+ [  2   0  17   0]
+ [  8   0 165   0]
+ [  0   0  12   0]]
+UAR: 0.33383404320048676
+
+SVM complexity: 1
+Accuracy: 0.6857142857142857
+Conf matrix: 
+[[ 30   0  46   0]
+ [  2   0  17   0]
+ [ 11   0 162   0]
+ [  0   0  12   0]]
+UAR: 0.33278825676909035
+
+SVM complexity: -5
+Accuracy: 0.7642857142857142
+Conf matrix: 
+[[ 49   0  27   0]
+ [  5   0  14   0]
+ [  8   0 165   0]
+ [  5   0   7   0]]
+UAR: 0.3996235168846973
+
+SVM complexity: -4
+Accuracy: 0.7571428571428571
+Conf matrix: 
+[[ 46   0  30   0]
+ [  3   0  16   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.391200182537268
+
+SVM complexity: -3
+Accuracy: 0.7321428571428571
+Conf matrix: 
+[[ 41   0  35   0]
+ [  6   0  13   0]
+ [  9   0 164   0]
+ [  2   0  10   0]]
+UAR: 0.37186264070581077
+
+SVM complexity: -2
+Accuracy: 0.7
+Conf matrix: 
+[[ 29   0  47   0]
+ [  0   0  19   0]
+ [  6   0 167   0]
+ [  1   0  11   0]]
+UAR: 0.3367242166108914
+
+SVM complexity: -1
+Accuracy: 0.6714285714285714
+Conf matrix: 
+[[ 28   0  48   0]
+ [  3   0  16   0]
+ [ 13   0 160   0]
+ [  3   0   9   0]]
+UAR: 0.3233191359902647
+
+SVM complexity: 0
+Accuracy: 0.6642857142857143
+Conf matrix: 
+[[ 28   0  48   0]
+ [  3   0  16   0]
+ [ 15   0 158   0]
+ [  3   0   9   0]]
+UAR: 0.32042896257986003
+
+SVM complexity: 1
+Accuracy: 0.6678571428571428
+Conf matrix: 
+[[ 28   0  48   0]
  [  3   0  16   0]
  [ 14   0 159   0]
  [  3   0   9   0]]
-UAR: 0.3251635229692729
+UAR: 0.32187404928506236
+
+SVM complexity: -5
+Accuracy: 0.7571428571428571
+Conf matrix: 
+[[ 46   0  30   0]
+ [  4   0  15   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.391200182537268
+
+SVM complexity: -4
+Accuracy: 0.7464285714285714
+Conf matrix: 
+[[ 44   0  32   0]
+ [  4   0  15   0]
+ [  8   0 165   0]
+ [  4   0   8   0]]
+UAR: 0.3831761484636447
+
+SVM complexity: -3
+Accuracy: 0.7464285714285714
+Conf matrix: 
+[[ 40   0  36   0]
+ [  3   0  16   0]
+ [  4   0 169   0]
+ [  3   0   9   0]]
+UAR: 0.3757986005476118
+
+SVM complexity: -2
+Accuracy: 0.7178571428571429
+Conf matrix: 
+[[ 37   0  39   0]
+ [  3   0  16   0]
+ [  9   0 164   0]
+ [  2   0  10   0]]
+UAR: 0.3587047459689687
+
+SVM complexity: -1
+Accuracy: 0.7285714285714285
+Conf matrix: 
+[[ 40   0  36   0]
+ [  3   0  16   0]
+ [  9   0 164   0]
+ [  2   0  10   0]]
+UAR: 0.36857316702160026
+
+SVM complexity: 0
+Accuracy: 0.7357142857142858
+Conf matrix: 
+[[ 43   0  33   0]
+ [  4   0  15   0]
+ [ 10   0 163   0]
+ [  2   0  10   0]]
+UAR: 0.3769965013690295
+
+SVM complexity: 1
 Accuracy: 0.7321428571428571
 Conf matrix: 
 [[ 40   0  36   0]
@@ -142,13 +1094,80 @@ Conf matrix:
  [  8   0 165   0]
  [  2   0  10   0]]
 UAR: 0.3700182537268025
+
+SVM complexity: -5
+Accuracy: 0.7928571428571428
+Conf matrix: 
+[[ 53   0  23   0]
+ [  4   0  15   0]
+ [  4   0 169   0]
+ [  4   0   8   0]]
+UAR: 0.41856175844234866
+
+SVM complexity: -4
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 49   2  25   0]
+ [  5   0  14   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.4010686035898996
+
+SVM complexity: -3
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 48   0  28   0]
+ [  5   0  14   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39922421661089136
+
+SVM complexity: -2
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 48   0  28   0]
+ [  5   0  14   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39922421661089136
+
+SVM complexity: -1
+Accuracy: 0.7607142857142857
+Conf matrix: 
+[[ 46   0  30   0]
+ [  5   0  14   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39264526924247034
+
+SVM complexity: 0
+Accuracy: 0.7678571428571429
+Conf matrix: 
+[[ 48   0  28   0]
+ [  5   0  14   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.39922421661089136
+
+SVM complexity: 1
 Accuracy: 0.7642857142857142
 Conf matrix: 
-[[ 47   1  28   0]
- [  6   0  13   0]
+[[ 47   0  29   0]
+ [  5   0  14   0]
  [  6   0 167   0]
  [  4   0   8   0]]
 UAR: 0.39593474292668085
+
+SVM complexity: -5
+Accuracy: 0.7785714285714286
+Conf matrix: 
+[[ 52   0  24   0]
+ [  4   0  15   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.4109370246425312
+
+SVM complexity: -4
 Accuracy: 0.775
 Conf matrix: 
 [[ 51   0  25   0]
@@ -156,6 +1175,53 @@ Conf matrix:
  [  7   0 166   0]
  [  4   0   8   0]]
 UAR: 0.4076475509583206
+
+SVM complexity: -3
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 51   0  25   0]
+ [  3   0  16   0]
+ [  8   0 165   0]
+ [  4   0   8   0]]
+UAR: 0.40620246425311834
+
+SVM complexity: -2
+Accuracy: 0.7714285714285715
+Conf matrix: 
+[[ 51   0  25   0]
+ [  3   0  16   0]
+ [  8   0 165   0]
+ [  4   0   8   0]]
+UAR: 0.40620246425311834
+
+SVM complexity: -1
+Accuracy: 0.775
+Conf matrix: 
+[[ 50   0  26   0]
+ [  3   0  16   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.4058031639793125
+
+SVM complexity: 0
+Accuracy: 0.775
+Conf matrix: 
+[[ 51   0  25   0]
+ [  3   0  16   0]
+ [  7   0 166   0]
+ [  4   0   8   0]]
+UAR: 0.4076475509583206
+
+SVM complexity: 1
+Accuracy: 0.775
+Conf matrix: 
+[[ 50   0  26   0]
+ [  3   0  16   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.4058031639793125
+
+SVM complexity: -5
 Accuracy: 0.7821428571428571
 Conf matrix: 
 [[ 53   1  21   1]
@@ -163,6 +1229,62 @@ Conf matrix:
  [  6   0 166   1]
  [  4   0   8   0]]
 UAR: 0.4142264983267417
+
+SVM complexity: -4
+Accuracy: 0.7785714285714286
+Conf matrix: 
+[[ 52   1  22   1]
+ [  4   0  15   0]
+ [  6   0 166   1]
+ [  4   0   8   0]]
+UAR: 0.4109370246425312
+
+SVM complexity: -3
+Accuracy: 0.7821428571428571
+Conf matrix: 
+[[ 53   0  22   1]
+ [  5   0  14   0]
+ [  6   0 166   1]
+ [  4   0   8   0]]
+UAR: 0.4142264983267417
+
+SVM complexity: -2
+Accuracy: 0.7785714285714286
+Conf matrix: 
+[[ 52   0  23   1]
+ [  4   0  15   0]
+ [  6   0 166   1]
+ [  4   0   8   0]]
+UAR: 0.4109370246425312
+
+SVM complexity: -1
+Accuracy: 0.7821428571428571
+Conf matrix: 
+[[ 52   0  24   0]
+ [  4   0  15   0]
+ [  6   0 167   0]
+ [  4   0   8   0]]
+UAR: 0.4123821113477335
+
+SVM complexity: 0
+Accuracy: 0.7785714285714286
+Conf matrix: 
+[[ 52   1  22   1]
+ [  4   0  15   0]
+ [  6   0 166   1]
+ [  4   0   8   0]]
+UAR: 0.4109370246425312
+
+SVM complexity: 1
+Accuracy: 0.7857142857142857
+Conf matrix: 
+[[ 54   1  20   1]
+ [  5   0  14   0]
+ [  6   0 166   1]
+ [  4   0   8   0]]
+UAR: 0.41751597201095225
+
+SVM complexity: -5
 Accuracy: 0.7964285714285714
 Conf matrix: 
 [[ 56   0  20   0]
@@ -170,6 +1292,116 @@ Conf matrix:
  [  5   1 167   0]
  [  4   0   8   0]]
 UAR: 0.4255400060845756
+
+SVM complexity: -4
+Accuracy: 0.7892857142857143
+Conf matrix: 
+[[ 54   0  22   0]
+ [  4   0  15   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4189610587161545
+
+SVM complexity: -3
+Accuracy: 0.8
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   0 168   0]
+ [  4   0   8   0]]
+UAR: 0.4269850927897779
+
+SVM complexity: -2
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+
+SVM complexity: -1
+Accuracy: 0.7928571428571428
+Conf matrix: 
+[[ 55   0  21   0]
+ [  4   0  15   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4222505324003651
+
+SVM complexity: 0
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+
+SVM complexity: 1
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+
+SVM complexity: -5
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+
+SVM complexity: -4
+Accuracy: 0.7892857142857143
+Conf matrix: 
+[[ 54   0  22   0]
+ [  4   0  15   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4189610587161545
+
+SVM complexity: -3
+Accuracy: 0.8
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   0 168   0]
+ [  4   0   8   0]]
+UAR: 0.4269850927897779
+
+SVM complexity: -2
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+
+SVM complexity: -1
+Accuracy: 0.7928571428571428
+Conf matrix: 
+[[ 55   0  21   0]
+ [  4   0  15   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4222505324003651
+
+SVM complexity: 0
+Accuracy: 0.7964285714285714
+Conf matrix: 
+[[ 56   0  20   0]
+ [  5   0  14   0]
+ [  5   1 167   0]
+ [  4   0   8   0]]
+UAR: 0.4255400060845756
+
+SVM complexity: 1
 Accuracy: 0.7964285714285714
 Conf matrix: 
 [[ 56   0  20   0]

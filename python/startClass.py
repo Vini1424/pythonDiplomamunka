@@ -70,16 +70,21 @@ def main(argv):
     classNumber = len(set(testLabels))
 
     problem  = svm_problem(trainLabels, trainFeatures)
-    parameters = svm_parameter('-c 1 -t 0 -b 1 -q')
-    modell = svm_train(problem, parameters)
-    predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell, options='-b 1 -q')
 
-    confMatrix = confusion_matrix(testLabels, predictedLabel)
-    accuracy = accuracy_score(testLabels, predictedLabel)
-    uar = recall_score(testLabels, predictedLabel, average='macro')
-    resultFile.write('\nAccuracy: ' + str(accuracy))
-    resultFile.write('\nConf matrix: \n' + str(confMatrix))
-    resultFile.write('\nUAR: ' + str(uar))
+    for i in range(-5,2):
+        newParameters = '-b 1 -q -t 0 -c ' + str(pow(10,i))
+        print(newParameters)
+        svmParameters = svm_parameter(newParameters)
+        modell = svm_train(problem, svmParameters)
+        predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell, options='-b 1 -q')
+        confMatrix = confusion_matrix(testLabels, predictedLabel)
+        accuracy = accuracy_score(testLabels, predictedLabel)
+        uar = recall_score(testLabels, predictedLabel, average='macro')
+        resultFile.write('\n\nSVM complexity: ' + str(i))
+        resultFile.write('\nAccuracy: ' + str(accuracy))
+        resultFile.write('\nConf matrix: \n' + str(confMatrix))
+        resultFile.write('\nUAR: ' + str(uar))
+    
     resultFile.close()
 
 
