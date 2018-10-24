@@ -128,17 +128,17 @@ echo.
 cd .\python
 REM python startClass.py -h
 echo. >> ..\result\results.txt
-echo train with 32 feature vectors with random >> ..\result\results.txt
-echo train with 64 feature vectors with random >> ..\result\results.txt
-echo train with 128 feature vectors with random >> ..\result\results.txt
-echo train with 256 feature vectors with random >> ..\result\results.txt
-echo train with 512 feature vectors with random >> ..\result\results.txt
-echo train with 1024 feature vectors with random >> ..\result\results.txt
-echo train with 2048 feature vectors with random >> ..\result\results.txt
-echo train with 4094 feature vectors with random >> ..\result\results.txt
-echo train with 8192 feature vectors with random >> ..\result\results.txt
-echo train with 16384 feature vectors with random >> ..\result\results.txt
-echo train with 32768 feature vectors with random >> ..\result\results.txt
+echo train with 32 feature vectors with random >> ..\result\results2.txt
+echo train with 64 feature vectors with random >> ..\result\results2.txt
+echo train with 128 feature vectors with random >> ..\result\results2.txt
+echo train with 256 feature vectors with random >> ..\result\results2.txt
+echo train with 512 feature vectors with random >> ..\result\results2.txt
+echo train with 1024 feature vectors with random >> ..\result\results2.txt
+echo train with 2048 feature vectors with random >> ..\result\results2.txt
+echo train with 4094 feature vectors with random >> ..\result\results2.txt
+echo train with 8192 feature vectors with random >> ..\result\results2.txt
+echo train with 16384 feature vectors with random >> ..\result\results2.txt
+echo train with 32768 feature vectors with random >> ..\result\results2.txt
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32.csv
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train64.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test64.csv
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train128.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test128.csv
@@ -152,17 +152,17 @@ start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32768.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32768.csv
 
 echo. >> ..\result\results.txt
-echo train with 32 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 64 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 128 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 256 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 512 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 1024 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 2048 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 4094 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 8192 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 16384 feature vectors with random plus plus >> ..\result\results.txt
-echo train with 32768 feature vectors with random plus plus >> ..\result\results.txt
+echo train with 32 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 64 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 128 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 256 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 512 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 1024 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 2048 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 4094 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 8192 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 16384 feature vectors with random plus plus >> ..\result\results2.txt
+echo train with 32768 feature vectors with random plus plus >> ..\result\results2.txt
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32randomPP.csv
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train64randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test64randomPP.csv
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train128randomPP.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test128randomPP.csv
