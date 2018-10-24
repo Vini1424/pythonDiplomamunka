@@ -3,6 +3,8 @@ sys.path.append('.\libsvm-master\python')
 from svmutil import *
 from sklearn.metrics import confusion_matrix, accuracy_score, recall_score
 import numpy as np
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold 
 
 def getFeatures(data):
     features = data.split("\n")
@@ -51,39 +53,45 @@ def main(argv):
 
     file = open(trainLabelFile)
     data = file.read(1000000000)
-    trainLabels = getLabels(data)
+    inputLabels = getLabels(data)
 
     file = open(trainFile)
     data = file.read(1000000000)
-    trainFeatures = getFeatures(data)
+    inputFeatures = getFeatures(data)
 
-    file = open(testLabelFile)
-    data = file.read(1000000000)
-    testLabels = getLabels(data)
+    resultFile = open("../result/results2.txt", "a+")
 
-    file = open(testFile)
-    data = file.read(1000000000)
-    testFeatures = getFeatures(data)
-
-    resultFile = open("../result/results.txt", "a+")
-
-    classNumber = len(set(testLabels))
-
-    problem  = svm_problem(trainLabels, trainFeatures)
-
+    classNumber = len(set(inputLabels))
+    
     for i in range(-5,2):
         newParameters = '-b 1 -q -t 0 -c ' + str(pow(10,i))
-        print(newParameters)
         svmParameters = svm_parameter(newParameters)
-        modell = svm_train(problem, svmParameters)
-        predictedLabel, predictedAccurancy, predictedVal = svm_predict(testLabels, testFeatures, modell, options='-b 1 -q')
-        confMatrix = confusion_matrix(testLabels, predictedLabel)
-        accuracy = accuracy_score(testLabels, predictedLabel)
-        uar = recall_score(testLabels, predictedLabel, average='macro')
-        resultFile.write('\n\nSVM complexity: ' + str(i))
-        resultFile.write('\nAccuracy: ' + str(accuracy))
-        resultFile.write('\nConf matrix: \n' + str(confMatrix))
-        resultFile.write('\nUAR: ' + str(uar))
+        print(newParameters)
+        
+        crossValidationDataSetCreator = KFold(n_splits=10, shuffle=True) # Define the split - into 10 folds 
+        crossValidationAccuracys = [] 
+        crossValidationUARs = []
+
+        for train_indexes, test_indexes in crossValidationDataSetCreator.split(inputFeatures):
+            print(test_indexes)
+            trainSet, trainLabels = [inputFeatures[i] for i in train_indexes], [inputLabels[i] for i in train_indexes]
+            testSet, testLabels = [inputFeatures[i] for i in test_indexes], [inputLabels[i] for i in test_indexes] 
+            #print("\n------TRAIN:", trainSet, "TEST:", testSet, "\n")
+
+            problem  = svm_problem(trainLabels, trainSet)
+
+            modell = svm_train(problem, svmParameters)
+            predictedLabels, predictedAccurancy, predictedVal = svm_predict(testLabels, testSet, modell, options='-b 1 -q')
+
+            confMatrix = confusion_matrix(testLabels, predictedLabels)
+            crossValidationAccuracys.append(accuracy_score(testLabels, predictedLabels))
+            crossValidationUARs.append(recall_score(testLabels, predictedLabels, average='macro'))
+
+        accurayAverage = sum(crossValidationAccuracys)/len(crossValidationAccuracys)
+        UARAverage = sum(crossValidationUARs)/len(crossValidationUARs)
+        resultFile.write('\n\nSVM complexity: \t' + str(pow(10,i)))
+        resultFile.write('\nCross validation average accuracy: \t' + str(accurayAverage))
+        resultFile.write('\nCross validation average UAR: \t' + str(UARAverage))
     
     resultFile.close()
 
