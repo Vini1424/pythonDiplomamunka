@@ -1,0 +1,282 @@
+codebook settings are:  -a 10, -c random++, -norm 1, -size from 32 to 32768 
+
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6281985083189904
+Cross validation average UAR: 	0.32622231147331704
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.6220596672403901
+Cross validation average UAR: 	0.31963241115444985
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6222174411933448
+Cross validation average UAR: 	0.31908641447387964
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.623278829604131
+Cross validation average UAR: 	0.33263931423302073
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6318129661503156
+Cross validation average UAR: 	0.32402929453750895
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.6221313826735513
+Cross validation average UAR: 	0.31598198480577905
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6221600688468157
+Cross validation average UAR: 	0.3177058929080934
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6281698221457258
+Cross validation average UAR: 	0.32767774098294933
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.623293172690763
+Cross validation average UAR: 	0.3193454013201385
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6352696500286863
+Cross validation average UAR: 	0.3303866975749545
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.639027538726334
+Cross validation average UAR: 	0.3320641836768858
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6365461847389557
+Cross validation average UAR: 	0.3290426382450995
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.6269363166953529
+Cross validation average UAR: 	0.31628837382387753
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6210126219162364
+Cross validation average UAR: 	0.3114910189977026
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6799196787148594
+Cross validation average UAR: 	0.3771512202121678
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.6896012621916237
+Cross validation average UAR: 	0.3878526235303349
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6846959265633965
+Cross validation average UAR: 	0.3788604563740432
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.6618330464716007
+Cross validation average UAR: 	0.3603114816816656
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6473752151462994
+Cross validation average UAR: 	0.3423930551420495
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.5907487091222031
+Cross validation average UAR: 	0.2869736662173661
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.5860154905335627
+Cross validation average UAR: 	0.2928815341877976
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6811388410786001
+Cross validation average UAR: 	0.3931188013587005
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.6702954675846241
+Cross validation average UAR: 	0.3663012316869958
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6498278829604132
+Cross validation average UAR: 	0.34832293366878975
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.6269363166953529
+Cross validation average UAR: 	0.3287160246423926
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6100401606425703
+Cross validation average UAR: 	0.31855233844539355
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.619635685599541
+Cross validation average UAR: 	0.3272934766962733
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6258892713711991
+Cross validation average UAR: 	0.32542729038954776
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6800487664945496
+Cross validation average UAR: 	0.3776306704348784
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.6593947217441194
+Cross validation average UAR: 	0.3559966750247105
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6233648881239244
+Cross validation average UAR: 	0.3265909935855871
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.6208691910499138
+Cross validation average UAR: 	0.3370963752843875
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6377940332759608
+Cross validation average UAR: 	0.33717264536913644
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.6341939185312679
+Cross validation average UAR: 	0.332767050907567
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6257888697647733
+Cross validation average UAR: 	0.33183253413923597
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6642713711990821
+Cross validation average UAR: 	0.36341676804463263
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.6160786001147447
+Cross validation average UAR: 	0.31954115740566646
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6437751004016065
+Cross validation average UAR: 	0.3413676898573619
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.635255306942054
+Cross validation average UAR: 	0.3362671859542429
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6233075157773953
+Cross validation average UAR: 	0.3283751920085066
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.6160786001147448
+Cross validation average UAR: 	0.32119108744202446
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6258032128514056
+Cross validation average UAR: 	0.3274848327145171
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6642283419391852
+Cross validation average UAR: 	0.3595716930529299
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.677481353987378
+Cross validation average UAR: 	0.36992820823154726
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.6618473895582329
+Cross validation average UAR: 	0.35832576707746755
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.67877223178428
+Cross validation average UAR: 	0.37647741618207503
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6499282845668388
+Cross validation average UAR: 	0.3504628054446286
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.673823866896156
+Cross validation average UAR: 	0.36952542260735977
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6763195639701663
+Cross validation average UAR: 	0.36947815177110505
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.6907056798623065
+Cross validation average UAR: 	0.383782023397954
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.6991824440619621
+Cross validation average UAR: 	0.392169600917499
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.693215720022949
+Cross validation average UAR: 	0.3833310187229651
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.6871055651176132
+Cross validation average UAR: 	0.38356026451803815
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.6992254733218588
+Cross validation average UAR: 	0.3911418033909463
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.6907630522088354
+Cross validation average UAR: 	0.3869680369031247
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.6931153184165233
+Cross validation average UAR: 	0.3882815305931859
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.7269506597819849
+Cross validation average UAR: 	0.4188721037738373
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.7136546184738956
+Cross validation average UAR: 	0.41906379340745936
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.7159781985083191
+Cross validation average UAR: 	0.4064672622332231
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.7124067699368904
+Cross validation average UAR: 	0.4077896419260429
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.7256741250717154
+Cross validation average UAR: 	0.41809524631093486
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.7232501434308662
+Cross validation average UAR: 	0.41272196733593225
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.718344807802639
+Cross validation average UAR: 	0.4146631072429246
+
+SVM complexity: 	1e-05
+Cross validation average accuracy: 	0.7459982788296042
+Cross validation average UAR: 	0.4359372256600301
+
+SVM complexity: 	0.0001
+Cross validation average accuracy: 	0.7365605278255881
+Cross validation average UAR: 	0.4378942354332048
+
+SVM complexity: 	0.001
+Cross validation average accuracy: 	0.7339787722317843
+Cross validation average UAR: 	0.43117746362246717
+
+SVM complexity: 	0.01
+Cross validation average accuracy: 	0.7363740676993689
+Cross validation average UAR: 	0.43671745465423184
+
+SVM complexity: 	0.1
+Cross validation average accuracy: 	0.7268215720022949
+Cross validation average UAR: 	0.4407785363990035
+
+SVM complexity: 	1
+Cross validation average accuracy: 	0.7292885829030408
+Cross validation average UAR: 	0.4309034537609489
+
+SVM complexity: 	10
+Cross validation average accuracy: 	0.7461560527825588
+Cross validation average UAR: 	0.44474506486307286
