@@ -59,7 +59,7 @@ def main(argv):
     data = file.read(1000000000)
     inputFeatures = getFeatures(data)
 
-    resultFile = open("../result/results2.txt", "a+")
+    resultFile = open("../result/startPythonResults.txt", "a+")
 
     classNumber = len(set(inputLabels))
     
@@ -73,7 +73,6 @@ def main(argv):
         crossValidationUARs = []
 
         for train_indexes, test_indexes in crossValidationDataSetCreator.split(inputFeatures):
-            print(test_indexes)
             trainSet, trainLabels = [inputFeatures[i] for i in train_indexes], [inputLabels[i] for i in train_indexes]
             testSet, testLabels = [inputFeatures[i] for i in test_indexes], [inputLabels[i] for i in test_indexes] 
             #print("\n------TRAIN:", trainSet, "TEST:", testSet, "\n")
