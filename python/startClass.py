@@ -32,15 +32,18 @@ def main(argv):
     trainLabelFile = ''
     testFile = ''
     testLabelFile = ''
+    inputTestFeatures = ''
+    inputTestLabels = ''
+    testUAR = ''
     
     try:
-        opts, args = getopt.getopt(argv,"hn:r:s:e:",["itrainlabelfile=","itrainfile=","itestlabelfile=","itestfile="])
+        opts, args = getopt.getopt(argv,"hn:r:s:e:t",["itrainlabelfile=","itrainfile=","itestlabelfile=","itestfile=","trainwithtest"])
     except getopt.GetoptError:
-        print('startClass.py -itrainlabelfile <input train label file> -itrainfile <input train file> -itestlabelfile <input test label file> -itestfile <input test file>')
+        print('startClass.py -n <input train label file> -r <input train file> -s <input test label file> -e <input test file> -t')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('startClass.py -itrainlabelfile <input train label file> -itrainfile <input train file> -itestlabelfile <input test label file> -itestfile <input test file>')
+            print('startClass.py --itrainlabelfile <input train label file> --itrainfile <input train file> --itestlabelfile <input test label file> --itestfile <input test file> --trainwithtest')
             sys.exit()
         elif opt in ("-r", "--itrainfile"):
             trainFile = arg
@@ -50,6 +53,15 @@ def main(argv):
             testFile = arg
         elif opt in ("-s", "--itestlabelfile"):
             testLabelFile = arg
+        elif opt in ("-t", "--trainwithtest"):
+            file = open(testLabelFile)
+            data = file.read(1000000000)
+            inputTestLabels = getLabels(data)
+
+            file = open(testFile)
+            data = file.read(1000000000)
+            inputTestFeatures = getFeatures(data)
+
 
     file = open(trainLabelFile)
     data = file.read(1000000000)
@@ -71,6 +83,7 @@ def main(argv):
         crossValidationDataSetCreator = KFold(n_splits=10, shuffle=True) # Define the split - into 10 folds 
         crossValidationAccuracys = [] 
         crossValidationUARs = []
+        testCrossValidationUARs = []
 
         for train_indexes, test_indexes in crossValidationDataSetCreator.split(inputFeatures):
             trainSet, trainLabels = [inputFeatures[i] for i in train_indexes], [inputLabels[i] for i in train_indexes]
@@ -91,6 +104,25 @@ def main(argv):
         resultFile.write('\n\nSVM complexity: \t' + str(pow(10,i)))
         resultFile.write('\nCross validation average accuracy: \t' + str(accurayAverage))
         resultFile.write('\nCross validation average UAR: \t' + str(UARAverage))
+
+        if(inputTestFeatures != ''):
+            for train_indexes, test_indexes in crossValidationDataSetCreator.split(inputTestFeatures):
+                trainSet, trainLabels = [inputFeatures[i] for i in train_indexes], [inputLabels[i] for i in train_indexes]
+                testSet, testLabels = [inputFeatures[i] for i in test_indexes], [inputLabels[i] for i in test_indexes] 
+                #print("\n------TRAIN:", trainSet, "TEST:", testSet, "\n")
+
+                problem  = svm_problem(trainLabels, trainSet)
+
+                modell = svm_train(problem, svmParameters)
+                predictedLabels, predictedAccurancy, predictedVal = svm_predict(testLabels, testSet, modell, options='-b 1 -q')
+
+                testCrossValidationUARs.append(recall_score(testLabels, predictedLabels, average='macro'))
+            
+            testUARAverage = sum(testCrossValidationUARs)/len(testCrossValidationUARs)
+            resultFile.write('\ntest database UAR: \t' + str(testUARAverage))
+
+        
+
     
     resultFile.close()
 
