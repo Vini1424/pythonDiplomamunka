@@ -91,9 +91,12 @@ def main(argv):
             #print("\n------TRAIN:", trainSet, "TEST:", testSet, "\n")
 
             problem  = svm_problem(trainLabels, trainSet)
-
             modell = svm_train(problem, svmParameters)
             predictedLabels, predictedAccurancy, predictedVal = svm_predict(testLabels, testSet, modell, options='-b 1 -q')
+            
+            if(inputTestFeatures != ''):
+                testPredictedLabels, testPredictedAccurancy, testPredictedVal = svm_predict(inputTestLabels, inputTestFeatures, modell, options='-b 1 -q')
+                testCrossValidationUARs.append(recall_score(inputTestLabels, testPredictedLabels, average='macro'))
 
             confMatrix = confusion_matrix(testLabels, predictedLabels)
             crossValidationAccuracys.append(accuracy_score(testLabels, predictedLabels))
@@ -106,24 +109,9 @@ def main(argv):
         resultFile.write('\nCross validation average UAR: \t' + str(UARAverage))
 
         if(inputTestFeatures != ''):
-            for train_indexes, test_indexes in crossValidationDataSetCreator.split(inputTestFeatures):
-                trainSet, trainLabels = [inputFeatures[i] for i in train_indexes], [inputLabels[i] for i in train_indexes]
-                testSet, testLabels = [inputFeatures[i] for i in test_indexes], [inputLabels[i] for i in test_indexes] 
-                #print("\n------TRAIN:", trainSet, "TEST:", testSet, "\n")
-
-                problem  = svm_problem(trainLabels, trainSet)
-
-                modell = svm_train(problem, svmParameters)
-                predictedLabels, predictedAccurancy, predictedVal = svm_predict(testLabels, testSet, modell, options='-b 1 -q')
-
-                testCrossValidationUARs.append(recall_score(testLabels, predictedLabels, average='macro'))
-            
             testUARAverage = sum(testCrossValidationUARs)/len(testCrossValidationUARs)
             resultFile.write('\ntest database UAR: \t' + str(testUARAverage))
-
         
-
-    
     resultFile.close()
 
 
