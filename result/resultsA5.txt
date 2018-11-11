@@ -1,4 +1,3 @@
-
 codebook settings are:  -a 5, -c random++, -norm 1, -size from 32 to 32768 
 
 
