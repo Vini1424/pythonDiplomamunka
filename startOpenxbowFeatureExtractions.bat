@@ -597,7 +597,7 @@ echo codebook size will be 32768...
 
  :commentSix
  
-goto commentSeven
+REM goto commentSeven
 echo used settings are -c random++ -norm 1 -a 10
 
 echo codebook size will be 32...
@@ -656,7 +656,7 @@ echo codebook size will be 32768...
 
 :commentSeven
  
-goto commentEight
+REM goto commentEight
 echo used settings are -c random++ -norm 1 -a 5
 
 echo codebook size will be 32...
