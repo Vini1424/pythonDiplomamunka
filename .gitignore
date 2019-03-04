@@ -111,3 +111,4 @@ train*.csv
 dataSet/
 openXBOW/
 python/.vscode
+python/libsvm
