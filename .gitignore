@@ -109,6 +109,6 @@ train*.csv
 
 # downloadable folders
 dataSet/
-openXBOW/
+openXBOW/src
 python/.vscode
 python/libsvm
