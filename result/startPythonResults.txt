@@ -1,0 +1,438 @@
+
+..\result\train32randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.2034919028340081
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.4761808367071525
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5161234817813766
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5197098515519568
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5178272604588394
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5176923076923077
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4912381916329285
+..\result\train64randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.2096626180836707
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5150134952766532
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5698582995951417
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5733097165991903
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5268016194331984
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5184986504723347
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4931477732793522
+..\result\train128randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.40322199730094466
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5508906882591094
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5839777327935223
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5400539811066126
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5212179487179487
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.49568151147098516
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4865991902834008
+..\result\train256randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.4501450742240216
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5765317139001349
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.571302294197031
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5489777327935222
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5322165991902834
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5370006747638326
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5323886639676113
+..\result\train512randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5412955465587045
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.6045074224021593
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5879116059379217
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5482759784075573
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5586302294197032
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5471794871794872
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5520546558704453
+..\result\train1024randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.582891363022942
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5736167341430499
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5283063427800271
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5154082321187584
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5088697705802969
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5203238866396761
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.522476383265857
+..\result\train2048randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5776855600539811
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5577159244264508
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5005195681511471
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.4993016194331984
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5026754385964913
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5048245614035088
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5038562753036437
+..\result\train4096randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5692914979757084
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5557287449392712
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5022334682860999
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5071558704453442
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5110526315789474
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5176821862348179
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5107051282051281
+..\result\train8192randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5854520917678813
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5135964912280702
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5014035087719299
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5009210526315789
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5173313090418354
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5198684210526316
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5038630229419703
+..\result\train16384randomPPnormalizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5588765182186235
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.489112685560054
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.489112685560054
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.4859109311740891
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5035458839406208
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.4879217273954116
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4961268556005398
+..\result\train32randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.20121457489878541
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5130398110661268
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5338765182186235
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.541244939271255
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5260188933873144
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5084716599190283
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4929925775978407
+..\result\train64randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.21655870445344128
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.52167004048583
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5408569500674764
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5212921727395412
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.4797368421052632
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.4753812415654521
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4445546558704454
+..\result\train128randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.39396761133603236
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5641666666666667
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5453677462887989
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5177327935222673
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5052665317139001
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.4889507422402159
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.49597165991902836
+..\result\train256randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.42365047233468284
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5373481781376519
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5361605937921727
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5061268556005398
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.4833974358974359
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.49485155195681507
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.49033738191632936
+..\result\train512randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5040620782726045
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5573481781376518
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5251923076923077
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.4880128205128205
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.4959986504723347
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.48559716599190283
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.4842375168690958
+..\result\train1024randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5365587044534413
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5732219973009447
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.540310391363023
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5093589743589744
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5103711201079623
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.5075607287449393
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.49360661268556005
+..\result\train2048randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5706039136302294
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5262685560053981
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5017611336032389
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.49324561403508776
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5059210526315789
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.4903981106612686
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5003103913630229
+..\result\train4096randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5327901484480433
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.5361201079622132
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.5076045883940621
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.5133940620782727
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5248009446693657
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.4943927125506073
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.5150202429149797
+..\result\train8192randomPPstandardizedA5.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.5370614035087719
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.4903441295546559
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.4722604588394062
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.4909143049932524
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.5089001349527665
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.48486167341430497
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.47809379217273956

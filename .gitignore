@@ -103,7 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# excel files
+#excel files
 test*.csv
 train*.csv
-
