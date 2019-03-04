@@ -103,6 +103,11 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-#excel files
+# generatable excel files
 test*.csv
 train*.csv
+
+# downloadable folders
+dataSet/
+openXBOW/
+python/.vscode
