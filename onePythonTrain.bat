@@ -123,7 +123,7 @@ start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full
 
 
 echo train with codebook size 32..
-start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32randomstandardizedA5Stand.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32randomA5Stand.csv --crossvalidationfile ..\dataSet\folds_train-full.txt --upsampling yes
+start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train32randomA5Stand.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test32randomA5Stand.csv --crossvalidationfile ..\dataSet\folds_train-full.txt --upsampling yes
  echo train with codebook size 64..
 start /w python startClass.py --itrainlabelfile ..\dataSet\labels.num.train-full.csv --itrainfile ..\result\train64randomA5Stand.csv --itestlabelfile ..\dataSet\labels.num.test.csv --itestfile ..\result\test64randomA5Stand.csv --crossvalidationfile ..\dataSet\folds_train-full.txt --upsampling yes
  echo train with codebook size 128..

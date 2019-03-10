@@ -919,6 +919,29 @@ Cross validation average UAR: 	0.44779014844804316
 
 SVM complexity: 	10
 Cross validation average UAR: 	0.4483603238866397
+..\result\train32randomA5Stand.csv
+
+
+SVM complexity: 	1e-05
+Cross validation average UAR: 	0.38033738191632926
+
+SVM complexity: 	0.0001
+Cross validation average UAR: 	0.3765654520917679
+
+SVM complexity: 	0.001
+Cross validation average UAR: 	0.3785357624831309
+
+SVM complexity: 	0.01
+Cross validation average UAR: 	0.3788798920377868
+
+SVM complexity: 	0.1
+Cross validation average UAR: 	0.3751484480431849
+
+SVM complexity: 	1
+Cross validation average UAR: 	0.36904183535762486
+
+SVM complexity: 	10
+Cross validation average UAR: 	0.36987516869095816
 ..\result\train64randomA5Stand.csv
 
 
