@@ -1,11 +1,10 @@
-import sys, getopt, re
-sys.path.append('./libsvm/python')
+import getopt, re
 from svmutil import *
-from sklearn.metrics import confusion_matrix, accuracy_score, recall_score
+from sklearn.metrics import confusion_matrix, recall_score
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 import random
-import csv
+
 
 def getFeatures(data):
     features = data.split("\n")
@@ -16,17 +15,19 @@ def getFeatures(data):
     for feature in features:
         featureList = feature.split(';')
         featureList = [float(inFeature) for inFeature in featureList]
-        featuresInList.append(featureList)
-    
-    #print(featuresInList)
+        if (featureList != ['']):
+            featuresInList.append(featureList)
+
     return featuresInList;
+
 
 def getLabels(data):
     labels = data.split("\n")
     labels.remove('')
     labels = [float(re.sub("[^0-9]", "", label)) for label in labels]
-    #print(labels)
+
     return labels;
+
 
 def separateDataIntoFolds(data, foldList):
     dataInFolds = [[] for i in range(len(set(foldList)))]
@@ -34,7 +35,9 @@ def separateDataIntoFolds(data, foldList):
     for foldIndex in foldList:
         dataInFolds[int(foldIndex)-1].append(data[loopIndex])
         loopIndex = loopIndex + 1
+
     return dataInFolds
+
 
 def upSamplingDataSet(data, requiredLength):
     while(len(data) != requiredLength):
@@ -42,25 +45,25 @@ def upSamplingDataSet(data, requiredLength):
             for elem in data.copy():
                 data.append(elem)
         else:
-            data.append(random.choice(data))
+            numberOfMissingData = requiredLength-len(data)
+            data.append(random.choice(np.random.choice(data, size=numberOfMissingData, replace=False)))
+
     return data
 
 
 def main(argv):
     trainFileName = ''
-    trainLabelFileName = ''
     testFileName = ''
     testLabelFileName = ''
-    crossvalidationFileName = ''
     inputTestFeatures = []
     inputTestLabels = []
     crossvalidationLabels = []
     isUpsamplingNeeded = False
     
     try:
-        opts, args = getopt.getopt(argv,"hn:r:s:e:t:c",["itrainlabelfile=","itrainfile=","itestlabelfile=","itestfile=","trainwithtest=", "crossvalidationfile=", "upsampling="])
+        opts, args = getopt.getopt(argv,"h:r:s:e:t:c:u",["itrainlabelfile=","itrainfile=","itestlabelfile=","itestfile=","trainwithtest=", "crossvalidationfile=", "upsampling="])
     except getopt.GetoptError:
-        pring(getopt.GetoptError)
+        print(getopt.GetoptError)
         print('startClass.py -n <input train label file> -r <input train file> -s <input test label file> -e <input test file> -t')
         sys.exit(2)
     for opt, arg in opts:
@@ -189,4 +192,3 @@ def main(argv):
 
 if __name__ == "__main__":
    main(sys.argv[1:])
-    
