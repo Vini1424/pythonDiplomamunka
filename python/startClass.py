@@ -1,4 +1,4 @@
-import getopt, re
+import getopt, re, sys
 from svmutil import *
 from sklearn.metrics import confusion_matrix, recall_score
 import numpy as np
@@ -18,7 +18,7 @@ def getFeatures(data):
         if (featureList != ['']):
             featuresInList.append(featureList)
 
-    return featuresInList;
+    return featuresInList
 
 
 def getLabels(data):
@@ -26,7 +26,7 @@ def getLabels(data):
     labels.remove('')
     labels = [float(re.sub("[^0-9]", "", label)) for label in labels]
 
-    return labels;
+    return labels
 
 
 def separateDataIntoFolds(data, foldList):
@@ -45,8 +45,12 @@ def upSamplingDataSet(data, requiredLength):
             for elem in data.copy():
                 data.append(elem)
         else:
+            dataCopy = data.copy()
             numberOfMissingData = requiredLength-len(data)
-            data.append(random.choice(np.random.choice(data, size=numberOfMissingData, replace=False)))
+            indexArray = list(range(1, len(data)))
+            random.shuffle(indexArray)
+            for i in range(numberOfMissingData):
+                data.append(dataCopy[i])
 
     return data
 
@@ -61,14 +65,14 @@ def main(argv):
     isUpsamplingNeeded = False
     
     try:
-        opts, args = getopt.getopt(argv,"h:r:s:e:t:c:u",["itrainlabelfile=","itrainfile=","itestlabelfile=","itestfile=","trainwithtest=", "crossvalidationfile=", "upsampling="])
+        opts, args = getopt.getopt(argv,"h:r:n:e:s:t:c:u",["itrainlabelfile=","itrainfile=","itestlabelfile=","itestfile=","trainwithtest=", "crossvalidationfile=", "upsampling="])
     except getopt.GetoptError:
         print(getopt.GetoptError)
-        print('startClass.py -n <input train label file> -r <input train file> -s <input test label file> -e <input test file> -t')
+        print('startClass.py -n <input train label file> -r <input train file> -s <input test label file> -e <input test file> -t <fill if you want to run test learning> -c <fill if you want crossvalidation> -u <fill if you want upsampling>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('startClass.py --itrainlabelfile <input train label file> --itrainfile <input train file> --itestlabelfile <input test label file> --itestfile <input test file> --trainwithtest')
+            print('startClass.py --itrainlabelfile <input train label file> --itrainfile <input train file> --itestlabelfile <input test label file> --itestfile <input test file> --trainwithtest <fill if you want to run test learning> --crossvalidationfile <fill if you want crossvalidation> --upsampling <fill if you want upsampling>')
             sys.exit()
         elif opt in ("-r", "--itrainfile"):
             trainFileName = arg
@@ -88,6 +92,7 @@ def main(argv):
             file = open(testLabelFileName)
             data = file.read(1000000000)
             inputTestLabels = getLabels(data)
+            print("read test file")
             file = open(testFileName)
             data = file.read(1000000000)
             inputTestFeatures = getFeatures(data)
@@ -99,7 +104,7 @@ def main(argv):
         elif opt in ("-u", "--upsampling"):
             isUpsamplingNeeded = True
 
-    resultFile = open("../result/startPythonResults.txt", "a+")
+    resultFile = open("../result/" + str(trainFileName.split('\\')[-1]) + "_pythonTrainResults.txt", "a+")
     random.seed(42)
 
     trainDataInFolds = separateDataIntoFolds(inputFeatures, crossvalidationLabels)
@@ -108,11 +113,14 @@ def main(argv):
     preprocessedDataInFolds = [[] for i in range(len(trainDataInFolds))]
     preprocessedLabelInFolds = [[] for i in range(len(trainLabelInFolds))]
 
+    preprocessedDataForTest = []
+    preprocessedLabelForTest = []
+
     if(isUpsamplingNeeded):
         for i in range(len(trainDataInFolds)):
             dataFold = trainDataInFolds[i].copy()
             labelFold = trainLabelInFolds[i].copy()
-            dataSeparatedByClass = [[] for i in range(len(set(labelFold)))]
+            dataSeparatedByClass = [[] for index in range(len(set(labelFold)))]
 
             for j in range(len(labelFold)):
                 dataSeparatedByClass[int(labelFold[j])-1].append(dataFold[j])
@@ -124,14 +132,28 @@ def main(argv):
                 for sample in dataByClass:
                     preprocessedDataInFolds[i].append(sample.copy())
                     preprocessedLabelInFolds[i].append(k+1)
+
+        if (len(inputTestFeatures) > 0):
+            testDataSeparatedByClass = [[] for index in range(len(set(inputLabels)))]
+            for j in range(len(inputLabels)):
+                testDataSeparatedByClass[int(inputLabels[j])-1].append(inputFeatures[j])
+            largestTestClassSize = max(len(data) for data in testDataSeparatedByClass)
+            for k in range(len(testDataSeparatedByClass)):
+                dataByClass = upSamplingDataSet(testDataSeparatedByClass[k].copy(), largestTestClassSize)
+                for sample in dataByClass:
+                    preprocessedDataForTest.append(sample.copy())
+                    preprocessedLabelForTest.append(k + 1)
+
     else:
         preprocessedDataInFolds = trainDataInFolds
-        preprocessedLabelInFolds = trainLabelInFolds 
+        preprocessedLabelInFolds = trainLabelInFolds
+        preprocessedDataForTest = inputFeatures
+        preprocessedLabelForTest = inputLabels
 
     resultFile.write('\n' + trainFileName + '\n')   
 
     for i in range(-5,2):
-        print(str(pow(10,i)))
+        print("SVM complexity: " + str(pow(10,i)))
         newParameters = '-b 1 -q -t 0 -c ' + str(pow(10,i))
         svmParameters = svm_parameter(newParameters)
         classSequence = []
@@ -181,11 +203,14 @@ def main(argv):
         confusionMatrix = confusion_matrix(inputLabels, allPredictedLabel)
 
         if(len(inputTestFeatures) > 0):
-            problem  = svm_problem(inputLabels, inputFeatures)
+            print("start test")
+            problem  = svm_problem(preprocessedLabelForTest, preprocessedDataForTest)
             modell = svm_train(problem, svmParameters)
             testPredictedLabels, testPredictedAccurancy, testPredictedVal = svm_predict(inputTestLabels, inputTestFeatures, modell, options='-b 1 -q')
             testUAR = recall_score(inputTestLabels, testPredictedLabels, average='macro')
             resultFile.write('\ntest database UAR: \t' + str(testUAR))
+
+        resultFile.flush()
         
     resultFile.close()
 

@@ -106,9 +106,9 @@ venv.bak/
 # generatable excel files
 test*.csv
 train*.csv
+delta*.csv
 
 # downloadable folders
-dataSet/
 openXBOW/src/
 python/.vscode/
 python/libsvm/
